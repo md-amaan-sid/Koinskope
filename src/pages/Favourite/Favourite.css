@@ -1,0 +1,25 @@
+.action {
+  text-align: center;
+}
+.table-layout .bin{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.table-layout .bin:hover{
+  transform: scale(1.9);
+}
+.favourite-container h1{
+  text-align: center;
+  font-size: 30px;
+  color: #640f04;
+  margin-top: 20px;
+  margin-bottom: 5%;
+}
+.favourite-container .para{
+  text-align: center;
+  font-size: 20px;
+  color: #080707;
+  margin-top: 20px;
+  margin-bottom: 5%;
+}

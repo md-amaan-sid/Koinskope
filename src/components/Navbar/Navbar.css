@@ -1,0 +1,108 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+  color: #ddd;
+  border-bottom: 2px solid #3c3c3c;
+}
+.navbar .logo {
+  width: max(15vw, 120px);
+}
+.navbar .love {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: max(1vw, 12px);
+}
+.navbar select {
+  padding: 5px 8px;
+  border-radius: 6px;
+  border: 2px solid rgb(20, 16, 3);
+  background: transparent;
+  color: rgb(7, 5, 5);
+  cursor: pointer;
+}
+.navbar select::content {
+  color: #0e0d05;
+}
+.navbar option {
+  background-color: #866508;
+  color: rgb(11, 3, 3);
+}
+.navbar button {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  background: transparent;
+  color: #0e0d05;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+.navbar button:active {
+  transform: scale(0.9);
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 20px 8%;
+  }
+  .navbar button {
+    gap: 8px;
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px 5%;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar button img {
+    width: 12px;
+  }
+}
+@media (max-width: 400px) {
+  .navbar {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .navbar .logo {
+    margin-bottom: 5px; 
+    width: max(30vw, 200px);
+  }
+
+  .nav-right {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 6px; 
+  }
+
+  .navbar button {
+    font-size: 10px; 
+    padding: 4px 8px;
+  }
+
+  .navbar select {
+    font-size: 10px; 
+    padding: 3px 5px; 
+  }
+
+  .navbar .love {
+    width: 14px; 
+    height: 14px;
+  }
+}
