@@ -1,2 +1,2 @@
-# coinscope
+# koinskope
 crypto currency tracker
